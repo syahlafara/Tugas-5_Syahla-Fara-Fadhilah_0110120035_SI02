@@ -1,0 +1,17 @@
+function login() {
+    var username = "syahla"
+    var password = "syahla2001"
+
+    var username_1 = document.getElementById('username').value;
+    var password_1 = document.getElementById('password').value;
+
+    if(username_1 == username && password_1 == password){
+        alert("success")
+        window.location.href="berhasil.html"
+        document.getElementById('success').innerHTML = 'Login Success'
+    }
+    else{
+        document.getElementById('success').innerHTML = 'Login Invalid'
+    }
+
+}

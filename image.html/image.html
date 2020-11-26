@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>image</title>
+</head>
+<body>
+    <select onchange="change_pic(this.value)">
+        <option value="boboyboi">Boboiboy</option>
+        <option value="Yaya">Yaya</option>
+        <option value="Ying">Ying</option>
+        <option value="Gopal">Gopal</option>
+        <option value="ochobot">Ochobot</option>
+        <option value="papazola">Papa zola</option>
+    </select> <br>
+    <img src=""id="gambar" alt="">
+    <script>
+        function change_pic(set) {
+            var photo
+            if(set =='boboyboi'){
+                photo = "img/boboyboi.jpeg"
+                alert('Boboyboi : "Tidak ada sesuatu pun yang pernah berhasil dengan baik jika pelaksanaanya tak dibantu oleh semangat yang kuat." ')
+            } else if(set == 'Yaya'){
+                photo = "img/Yaya.jpeg"
+                alert('Yaya : "Orang senyum balaslah balik, Senyum tu kan ibadah." ')
+            } else if(set == 'Ying'){
+                photo = "img/Ying.jpeg"
+                alert('Ying : "I have loved you for a thousand years." ')
+            } else if(set == 'Gopal'){
+                photo = "img/Gopal.jpeg"
+                alert ('Gopal : "Ada dua hal yang tidak boleh pria lakukan didunia ini. Jangan bolos sekolah & jangan jujur kepada wanita"')
+            } else if(set == 'ochobot'){
+                photo = "img/ochobot.jpeg"
+                alert ('ochobot : "Teman adalah kekuatan." ')
+            } else if(set == 'papazola'){
+                photo = "img/papazola.jpeg"
+                alert('Papa zola: "Kebenaran tidak pernah menangis kecuali ketika memotong bawang"')
+            }
+            console.log(photo);
+            document.getElementById("gambar").src = photo
+        }
+    </script>
+</body>
+</html>

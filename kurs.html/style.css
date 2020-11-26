@@ -1,0 +1,15 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.table1 {
+   
+    font-family: serif;
+    color: #8f386b ;
+    border-collapse: separate;
+    
+}
+.table1, th, td {
+    border: 3px solid;
+    color: #801a1a ; 
+    padding: 20px 10px;
+}

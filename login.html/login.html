@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Username</label>
+    <input type="text" id="username">
+    <label for="">Password</label>
+    <input type="password" id="password">
+    <button onclick="login()">Submit</button>
+    <h1 id="success"></h1>
+
+    <script>
+        function login() {
+            var username = "syahla"
+            var password = "syahla2001"
+
+            var username_1 = document.getElementById('username').value;
+            var password_1 = document.getElementById('password').value;
+
+            if(username_1 == username && password_1 == password){
+                alert("success")
+                window.location.href="berhasil.html"
+                document.getElementById('success').innerHTML = 'Login Success'
+            }
+            else{
+                document.getElementById('success').innerHTML = 'Login Invalid'
+            }
+
+        }
+    </script>
+</body>
+</html>
+<!--let's try, can i see your source  -->
